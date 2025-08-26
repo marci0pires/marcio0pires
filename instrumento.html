@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cadastro de Instrumentos</title>
+  <link rel="stylesheet" href="instrumento.css" />
+</head>
+<body>
+
+  <h1>Cadastro de Instrumentos Musicais</h1>
+
+  <label for="quantidade">Quantos instrumentos deseja cadastrar?</label>
+  <input type="number" id="quantidade" min="1" />
+  <button id="btnGerar">Gerar formulários</button>
+
+  <form id="formInstrumentos" style="display:none;">
+    <div id="containerFormularios"></div>
+    <button type="button" id="btnMostrar">Mostrar instrumentos cadastrados</button>
+  </form>
+
+  <div id="resultado"></div>
+
+  <script src="instrumento.js"></script>
+</body>
+</html>
